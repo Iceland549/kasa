@@ -1,27 +1,27 @@
 // Importez les fichiers SCSS des composants
-@import 'components/_header';
-@import 'components/_footer';
 @import 'components/Banner/banner';
-@import 'components/_footer';
-@import 'components/_footer';
-@import 'components/_footer';
-@import 'components/_footer';
-@import 'components/_footer';
+@import 'components/Card/card';
+@import 'components/Carousel/carousel';
+@import 'components/DropdownMenu/dropdownmenu';
+@import 'components/Error/error';
+@import 'components/Footer/footer';
+@import 'components/Header/header';
+@import 'components/Layout/layout';
 
 
 // Importez les fichiers SCSS des pages
-@import 'pages/_home';
-@import 'pages/_about';
-@import 'pages/_about';
-@import 'pages/_about';
-@import 'pages/_about';
-@import 'pages/_about';
-@import 'pages/_about';
-@import 'pages/_about';
-@import 'pages/_about';
+@import 'pages/About/about';
+@import 'pages/Error404/error404';
+@import 'pages/Home/home';
+@import 'pages/LocPage1/locpage1';
+@import 'pages/LocPage2/locpage2';
+@import 'pages/LocPage3/locpage3';
+@import 'pages/LocPage4/locpage4';
+@import 'pages/LocPage5/locpage5';
+@import 'pages/LocPage6/locpage6';
 
 
 // Importez les fichiers SCSS de base (variables, mixins, base styles)
-@import 'utils/_variables';
-@import 'utils/_mixins';
-@import 'utils/_base';
+@import 'utils/styles/sass/base';
+@import 'utils/styles/sass/mixins';
+@import 'utils/styles/sass/variables';
