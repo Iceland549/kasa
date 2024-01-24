@@ -1,0 +1,27 @@
+// Importez les fichiers SCSS des composants
+@import 'components/_header';
+@import 'components/_footer';
+@import 'components/Banner/banner';
+@import 'components/_footer';
+@import 'components/_footer';
+@import 'components/_footer';
+@import 'components/_footer';
+@import 'components/_footer';
+
+
+// Importez les fichiers SCSS des pages
+@import 'pages/_home';
+@import 'pages/_about';
+@import 'pages/_about';
+@import 'pages/_about';
+@import 'pages/_about';
+@import 'pages/_about';
+@import 'pages/_about';
+@import 'pages/_about';
+@import 'pages/_about';
+
+
+// Importez les fichiers SCSS de base (variables, mixins, base styles)
+@import 'utils/_variables';
+@import 'utils/_mixins';
+@import 'utils/_base';
