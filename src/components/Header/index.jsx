@@ -6,7 +6,7 @@ import './_header.scss'
 function Header() {
   return (
     <header>
-      <img src={logo} alt="Logo" />
+      <img src={logo} className="header_logo" alt="Logo" />
       <nav>
         <ul>
           <li><Link to="/">Accueil</Link></li>
