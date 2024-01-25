@@ -1,0 +1,27 @@
+@import '../../utils/styles/sass/_variables';
+
+// styles/components/Footer.scss
+
+footer {
+    width: 1440px;
+    height: 209px;
+    background-color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  
+    .footer_logo {
+        width: 100px;
+        height: 46px;  
+    }
+  
+    p {
+      text-align: center;
+      font-size: 14px;  
+      margin-top: 10px;
+      color: $thrid-color; 
+    }
+  }
+  
