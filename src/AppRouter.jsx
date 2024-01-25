@@ -12,20 +12,18 @@ import LocationPage5 from './pages/LocPage5';
 import LocationPage6 from './pages/LocPage6';
 import Error404 from './pages/Error404';
 
-const AppRouter = () => {
+function AppRouter() {
   return (
     <Router>
         <Routes>
-            <Route path="/" element={<Layout />}>
-                <Route index element={<Home />} />
-                <Route path="/About" element={<About/>} />
-                <Route path="/LocPage1" element={<LocationPage1 />} />
-                <Route path="/LocPage2" element={<LocationPage2 />} />
-                <Route path="/LocPage3" element={<LocationPage3 />} />
-                <Route path="/LocPage4" element={<LocationPage4 />} />
-                <Route path="/LocPage5" element={<LocationPage5 />} />
-                <Route path="/LocPage6" element={<LocationPage6 />} />
-            </Route>    
+            <Route path="/" element={<Layout><Home /></Layout>} />
+            <Route path="/About" element={<Layout><About/></Layout>} />
+            <Route path="/LocPage1" element={<Layout><LocationPage1 /></Layout>} />
+            <Route path="/LocPage2" element={<Layout><LocationPage2 /></Layout>} />
+            <Route path="/LocPage3" element={<Layout><LocationPage3 /></Layout>} />
+            <Route path="/LocPage4" element={<Layout><LocationPage4 /></Layout>} />
+            <Route path="/LocPage5" element={<Layout><LocationPage5 /></Layout>} />
+            <Route path="/LocPage6" element={<Layout><LocationPage6 /></Layout>} />
             <Route path="*" element={<Error404 />} />
         </Routes>
     </Router>
