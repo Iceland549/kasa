@@ -1,0 +1,26 @@
+@import '../../utils/styles/sass/_variables';
+
+.banner {
+    position: relative;
+    height: 203px;
+    width: 1240px;
+    padding: 50px 100px;
+  
+    .banner_img1 {
+        height: 203px;
+        width: 1240px;
+        object-fit: cover;
+      border-radius: 25px;
+    }
+  
+    .banner_text {
+      position: absolute;
+      top: 40%;
+      left: 30%;
+      color: $thrid-color;
+      font-size: 48px;
+      text-align: center;
+      z-index: 1; 
+    }
+  }
+  
