@@ -1,13 +1,56 @@
+.banner {
+  position: relative;
+  height: 203px;
+  width: 1240px;
+  padding: 50px 100px;
+}
+.banner .banner_img1 {
+  height: 203px;
+  width: 1240px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.banner .banner_text {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  color: white;
+  font-size: 48px;
+  text-align: center;
+  z-index: 1;
+}
+
+footer {
+  width: 1440px;
+  height: 209px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+footer .footer_logo {
+  width: 100px;
+  height: 46px;
+}
+footer p {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+  color: white;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 1240px;
   height: 65px;
-  padding-top: 45px;
+  padding: 45px 100px 0;
   margin: auto;
 }
-header img {
+header .hearder_logo {
   width: 210px;
   height: 68px;
 }
