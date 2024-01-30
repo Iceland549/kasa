@@ -1,0 +1,13 @@
+@import '../../utils/styles/sass/_variables';
+
+.card_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    background-color: grey;
+    width: 1240px;
+    height: 830px;
+    margin: 50px;
+    padding: 100px 50px;
+
+}
