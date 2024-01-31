@@ -20,6 +20,23 @@
   z-index: 1;
 }
 
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 50px;
+  background-color: grey;
+  width: 1240px;
+  height: 830px;
+  margin: 50px;
+  padding: 100px 50px;
+}
+.card_container .card_loc {
+  width: 340px;
+  height: 340px;
+  color: red;
+}
+
 footer {
   width: 1440px;
   height: 209px;
