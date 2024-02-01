@@ -2,6 +2,7 @@
 import React from 'react';
 import Banner from '../../components/Banner';
 import DropdownMenu from '../../components/DropdownMenu'; 
+import banner2 from '../../assets/banner_apropos.jpg'
 
 function About() {
   const text1 = "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes";
@@ -11,7 +12,7 @@ function About() {
 
   return (
     <div>
-      <Banner />
+      <Banner image={banner2} />
       <DropdownMenu title="Fiabilité" >{text1}</DropdownMenu> 
       <DropdownMenu title="Respect" >{text2}</DropdownMenu> 
       <DropdownMenu title="Service" >{text3}</DropdownMenu>
