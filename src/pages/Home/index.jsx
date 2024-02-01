@@ -19,7 +19,7 @@ function Home() {
   return (
     <div>
         <Banner image={banner1}>
-          <div className="banner_text">Chez vous, partout et ailleurs</div>
+          <div className="banner_text">Chez vous, <br/> partout et ailleurs</div>
         </Banner>        
         <div className="card_container">
           {logements.map(logement => (
