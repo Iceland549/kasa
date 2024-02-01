@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Banner from '../../components/Banner';
 import Card from '../../components/Card';
 import { getLogements } from '../../utils/api/api';
-
+import banner1 from '../../assets/banner_accueil.jpg'
+import './home.scss'
 
 function Home() {
   const [logements, setLogements] = useState([])
@@ -17,10 +18,12 @@ function Home() {
 
   return (
     <div>
-        <Banner />
+        <Banner image={banner1}>
+          <div className="banner_text">Chez vous, partout et ailleurs</div>
+        </Banner>        
         <div className="card_container">
           {logements.map(logement => (
-            <Card key={logement.id} id={logement.id} title={logement.title} cover={logement.cover} />
+            <Card className="card" key={logement.id} id={logement.id} title={logement.title} cover={logement.cover} />
           ))}
         </div>
     </div>
