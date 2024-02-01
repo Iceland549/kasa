@@ -1,13 +1,27 @@
 @import '../../utils/styles/sass/_variables';
 
 .card_container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-    background-color: grey;
-    width: 1240px;
-    height: 830px;
-    margin: 50px;
-    padding: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-}
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 255px;
+        object-fit: cover;
+    }
+  
+    @media (min-width: 769px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  
+      .card {
+        flex: 0 0 calc(33.333% - 20px);
+        margin: 10px;
+      }
+    }
+  }
+  
