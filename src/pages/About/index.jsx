@@ -1,7 +1,7 @@
 // About
 import React from 'react';
 import Banner from '../../components/Banner';
-import DropdownMenu from '../../components/DropdownMenu'; 
+import Collapse from '../../components/Collapse'; 
 import banner2 from '../../assets/banner_apropos.jpg'
 
 function About() {
@@ -13,10 +13,22 @@ function About() {
   return (
     <div>
       <Banner image={banner2} />
-      <DropdownMenu title="Fiabilité" >{text1}</DropdownMenu> 
-      <DropdownMenu title="Respect" >{text2}</DropdownMenu> 
-      <DropdownMenu title="Service" >{text3}</DropdownMenu>
-      <DropdownMenu title="Sécurité" >{text4}</DropdownMenu>
+      <Collapse>
+        <p>Fiabilité</p>
+        <p>{text1}</p>
+      </Collapse>
+      <Collapse>
+        <p>Respect</p>
+        <p>{text2}</p>
+      </Collapse>
+      <Collapse>
+        <p>Service</p>
+        <p>{text3}</p>
+      </Collapse>
+      <Collapse>
+        <p>Sécurité</p>
+        <p>{text4}</p>
+      </Collapse>
     </div>
   );
 };
