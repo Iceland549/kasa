@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { getLogements } from '../../utils/api/api';
 import { useParams } from 'react-router-dom';
-import DropdownMenu from '../../components/DropdownMenu';
+import Collapse from '../../components/Collapse';
 import Tags from '../../components/Tags';
 import Carousel from '../../components/Carousel'; 
 
@@ -29,10 +29,18 @@ function LocPage() {
       <Carousel images={pictures} />
       <h1>{title}</h1>
       <p>{location}</p>
-      <p>{host.name}</p>
-      <p>Rating: {rating}</p>
-      <DropdownMenu description={description} equipments={equipments} id={id} />
       <Tags tags={tags} id={id} />
+      <p>Rating: {rating}</p>
+      <p>{host.name}</p>
+      <img src={host.picture} alt='host' />
+      <Collapse>
+        <p>{description}</p>
+        <ul>
+          {equipments.map((equipment, index) => (
+            <li key={index}>{equipment}</li>
+          ))}
+        </ul>
+      </Collapse>
     </div>
   );
 };
