@@ -1,0 +1,10 @@
+@import '../../utils/styles/sass/_variables';
+
+.arrow-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary-color;
+    padding: 10px;
+    border-radius: 5px;
+}
