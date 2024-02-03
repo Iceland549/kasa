@@ -17,6 +17,7 @@ const Carousel = ({ images }) => {
   return (
     <div className="carousel">
       <img className="slides-image carousel-img" src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
+      {images.length > 1 && <div className="image-count">{`${currentIndex + 1}/${images.length}`}</div>}
       <img
         src={arrowLeftImage}
         alt="Flèche gauche"
