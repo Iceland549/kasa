@@ -1,3 +1,6 @@
+@import '../../utils/styles/sass/_variables';
+
+
 .carousel {
     position: relative;
 }
@@ -15,6 +18,14 @@
     transform: translateY(350%);
     width: 1em;
     height: 2em;
+}
+
+.image-count {
+    position: absolute;
+    bottom: 0.5em;
+    left: 50%;
+    transform: translate(-50%);
+    color: $third-color;
 }
 
 .arrow_left {
