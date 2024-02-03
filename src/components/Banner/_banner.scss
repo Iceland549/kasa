@@ -2,12 +2,12 @@
 
 .banner {
   position: relative;
-  height: 12em;
+  height: 8em;
   width: 100%;
   margin: auto;
   
   .banner_img1 {
-    height: 9em;
+    height: 6em;
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
@@ -17,7 +17,7 @@
   
     .banner_text {
       position: absolute;
-      top: 2em;
+      top: 1em;
       left: 0.5em; 
       color: $thrid-color;
       font-size: 1.5em;
