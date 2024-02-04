@@ -4,6 +4,7 @@ import Banner from '../../components/Banner';
 import Collapse from '../../components/Collapse'; 
 import banner2 from '../../assets/banner_apropos.jpg'
 
+
 function About() {
   const text1 = "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes";
   const text2 = "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme";
