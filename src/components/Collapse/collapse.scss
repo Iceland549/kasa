@@ -5,6 +5,21 @@
     justify-content: space-between;
     align-items: center;
     background-color: $primary-color;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 0.6em;
+    border-radius: 0.3em;
+
+    .collapse-title, .arrow-icons  {
+        color: $third-color;
+    }
+}
+
+.collapse-children {
+    border-radius: 0.3em;
+    padding: 0.6em;
+    background-color: $fourth-color;
+    display: none; /* Par défaut, la div est cachée */
+}
+
+.collapse-children.open {
+    display: block; /* Lorsque la classe 'open' est ajoutée, la div est affichée */
 }
