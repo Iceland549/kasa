@@ -14,7 +14,7 @@ function AppRouter() {
             <Route path="/" element={<Layout><Home /></Layout>} />
             <Route path="/About" element={<Layout><About/></Layout>} />
             <Route path="/LocPage/:id" element={<Layout><LocationPage /></Layout>} />
-            <Route path="*" element={<Error404 />} />
+            <Route path="*" element={<Layout><Error404 /></Layout>} />
         </Routes>
     </Router>
   );
