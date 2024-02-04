@@ -22,11 +22,16 @@ header {
         list-style: none;
   
         li {
-          margin: auto; 
+          margin-right: 1em; 
   
           a {
+            display: flex;
+            justify-content: space-between;
             text-decoration: none;
-            color: $secondary-color; 
+            color: $primary-color;
+          }
+          a.active {
+            border-bottom: 1px solid $primary-color; 
           }
         }
       }
