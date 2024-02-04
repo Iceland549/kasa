@@ -1,8 +1,10 @@
+// Error
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './error.scss'
 
 
-function Error404() {
+function Error() {
   return (
     <div>
       <h1>404</h1>
@@ -10,9 +12,8 @@ function Error404() {
       <Link to={`/`}>
         <p>Retourner sur la page d'acceuil</p>
       </Link>
-
     </div>
   );
 };
 
-export default Error404;
+export default Error;
