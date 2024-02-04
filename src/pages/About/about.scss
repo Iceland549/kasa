@@ -5,3 +5,11 @@
     gap: 2em;
     padding-bottom: 2em;
 }
+
+@media (min-width: 768px) {
+    .about-container {
+        width: 80%; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+}
