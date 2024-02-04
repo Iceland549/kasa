@@ -33,11 +33,25 @@
 
 .banner-text {
     position: absolute;
-    top: 30%; 
-    left: 35%;
+    top: 5vh; 
+    left: 30vw;
     transform: translate(-50%, -50%); 
     color: $third-color;
     font-size: 1.5em;
 }
 
+@media screen and (min-width: 768px) {
+    .banner-text {
+        top: 2vh;
+        left: 22vw;
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .banner-text {
+        top: 1.5vh;
+        font-size: 2em;
+    }
+}
   
