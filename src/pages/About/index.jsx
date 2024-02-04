@@ -3,6 +3,7 @@ import React from 'react';
 import Banner from '../../components/Banner';
 import Collapse from '../../components/Collapse'; 
 import banner2 from '../../assets/banner_apropos.jpg'
+import './about.scss'
 
 
 function About() {
@@ -14,18 +15,20 @@ function About() {
   return (
     <div>
       <Banner image={banner2} />
-      <Collapse title="Fiabilité">
-        <p>{text1}</p>
-      </Collapse>
-      <Collapse title="Respect">
-        <p>{text2}</p>
-      </Collapse>
-      <Collapse title="Service">
-        <p>{text3}</p>
-      </Collapse>
-      <Collapse title="Sécurité">
-        <p>{text4}</p>
-      </Collapse>
+      <div className='about-container'>
+        <Collapse title="Fiabilité">
+          <p>{text1}</p>
+        </Collapse>
+        <Collapse title="Respect">
+          <p>{text2}</p>
+        </Collapse>
+        <Collapse title="Service">
+          <p>{text3}</p>
+        </Collapse>
+        <Collapse title="Sécurité">
+          <p>{text4}</p>
+        </Collapse>
+      </div>
     </div>
   );
 };
