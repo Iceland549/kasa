@@ -33,12 +33,10 @@ function LocPage() {
       <p>Rating: {rating}</p>
       <p>{host.name}</p>
       <img src={host.picture} alt='host' />
-      <Collapse>
-        <p>Description</p>
+      <Collapse title="Description">
         <p>{description}</p>
       </Collapse>
-      <Collapse>
-        <p>Equipements</p>
+      <Collapse title="Equipements">
         <ul>
           {equipments.map((equipment, index) => (
             <li key={index}>{equipment}</li>

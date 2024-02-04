@@ -14,20 +14,16 @@ function About() {
   return (
     <div>
       <Banner image={banner2} />
-      <Collapse>
-        <p>Fiabilité</p>
+      <Collapse title="Fiabilité">
         <p>{text1}</p>
       </Collapse>
-      <Collapse>
-        <p>Respect</p>
+      <Collapse title="Respect">
         <p>{text2}</p>
       </Collapse>
-      <Collapse>
-        <p>Service</p>
+      <Collapse title="Service">
         <p>{text3}</p>
       </Collapse>
-      <Collapse>
-        <p>Sécurité</p>
+      <Collapse title="Sécurité">
         <p>{text4}</p>
       </Collapse>
     </div>
