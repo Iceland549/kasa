@@ -4,6 +4,7 @@ import Card from '../../components/Card';
 import { getLogements } from '../../utils/api/api';
 import banner1 from '../../assets/banner_accueil.jpg'
 import './home.scss'
+import '../../utils/styles/sass/_base.scss'
 
 function Home() {
   const [logements, setLogements] = useState([])
@@ -18,10 +19,10 @@ function Home() {
 
   return (
     <div>
-        <Banner image={banner1}>
-          <div className="banner_text">Chez vous, <br/> partout et ailleurs</div>
+        <Banner className='banner-container' image={banner1}>
+          <h1 className="banner-text">Chez vous, <br/> partout et ailleurs</h1>
         </Banner>        
-        <div className="card_container">
+        <div className="card-container">
           {logements.map(logement => (
             <Card className="card" key={logement.id} id={logement.id} title={logement.title} cover={logement.cover} />
           ))}
