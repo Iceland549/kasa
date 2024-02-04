@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../../assets/logo.jpg'; 
 import './_header.scss'
 
@@ -9,8 +9,8 @@ function Header() {
       <img src={logo} className="header_logo" alt="Logo" />
       <nav>
         <ul>
-          <li><Link to="/">Accueil</Link></li>
-          <li><Link to="/About">A propos</Link></li>
+        <li><NavLink to="/" activeStyle={{ borderBottom: '2px solid red' }}>Accueil</NavLink></li>
+        <li><NavLink to="/About" activeStyle={{ borderBottom: '2px solid red' }}>A propos</NavLink></li>
         </ul>
       </nav>
     </header>
