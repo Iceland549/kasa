@@ -1,5 +1,22 @@
+@import '../../utils/styles/sass/_variables';
+
 .collapse-container {
     display: flex;
     flex-direction: column;
     gap: 2em;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  
+    .star {
+      color: $primary-color;
+    }
+  
+    .empty-star {
+        color: $third-color;
+        filter: brightness(80%);
+    }
 }
