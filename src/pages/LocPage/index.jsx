@@ -5,6 +5,8 @@ import Collapse from '../../components/Collapse';
 import Tags from '../../components/Tags';
 import Carousel from '../../components/Carousel'; 
 import './locpage.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 function LocPage() {
   const [logement, setLogement] = useState(null);
@@ -25,13 +27,32 @@ function LocPage() {
 
   const { title, pictures, host, rating, location, description, equipments, tags } = logement;
 
+  const renderStars = (numStars) => {
+    const totalStars = 5;
+    const filledStars = Math.min(numStars, totalStars);
+  
+    return (
+      <div className="rating">
+        {[...Array(totalStars)].map((_, index) => (
+          <FontAwesomeIcon
+            key={index}
+            icon={faStar}
+            className={index < filledStars ? 'star' : 'empty-star'}
+          />
+        ))}
+      </div>
+    );
+  };
+  
+  
+
   return (
     <div>
       <Carousel images={pictures} />
       <h1>{title}</h1>
       <p>{location}</p>
       <Tags tags={tags} id={id} />
-      <p>Rating: {rating}</p>
+      {renderStars(rating)}
       <p>{host.name}</p>
       <img src={host.picture} alt='host' />
       <div className='collapse-container'>
