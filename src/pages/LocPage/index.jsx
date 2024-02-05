@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import Collapse from '../../components/Collapse';
 import Tags from '../../components/Tags';
 import Carousel from '../../components/Carousel'; 
+import './locpage.scss'
 
 function LocPage() {
   const [logement, setLogement] = useState(null);
@@ -33,16 +34,18 @@ function LocPage() {
       <p>Rating: {rating}</p>
       <p>{host.name}</p>
       <img src={host.picture} alt='host' />
-      <Collapse title="Description">
-        <p>{description}</p>
-      </Collapse>
-      <Collapse title="Equipements">
-        <ul>
-          {equipments.map((equipment, index) => (
-            <li key={index}>{equipment}</li>
-          ))}
-        </ul>
-      </Collapse>
+      <div className='collapse-container'>
+        <Collapse title="Description">
+          <p>{description}</p>
+        </Collapse>
+        <Collapse title="Equipements">
+          <ul>
+            {equipments.map((equipment, index) => (
+              <li key={index}>{equipment}</li>
+            ))}
+          </ul>
+        </Collapse>
+      </div>
     </div>
   );
 };
