@@ -19,13 +19,28 @@
     color: $primary-color;
     background-color: $fourth-color;
     filter: brightness(90%);
-    display: none; /* Par défaut, la div est cachée */
+    opacity: 0;
+    max-height: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .collapse-children.open {
-    display: flex; /* Si la classe est 'open', la div est affichée */
+    opacity: 1;
+    transform: translateY(0);
+
+    max-height: 500px; /* ajustez cette valeur en fonction de votre contenu */   
     ul {
         flex-direction: column;
         list-style: none;
     }
+}
+.collapse-children p {
+    opacity: 0;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-in-out 0.5s, max-height 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.collapse-children.open p {
+    opacity: 1;
 }
