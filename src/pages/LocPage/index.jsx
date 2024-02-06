@@ -27,45 +27,43 @@ function LocPage() {
 
   const { title, pictures, host, rating, location, description, equipments, tags } = logement;
 
-  const renderStars = (numStars) => {
-    const totalStars = 5;
-    const filledStars = Math.min(numStars, totalStars);
-  
-    return (
-      <div className="rating">
-        {[...Array(totalStars)].map((_, index) => (
-          <FontAwesomeIcon
-            key={index}
-            icon={faStar}
-            className={index < filledStars ? 'star' : 'empty-star'}
-          />
-        ))}
-      </div>
-    );
-  };
-  
-  
+  const totalStars = 5;
+  const filledStars = Math.min(rating, totalStars); 
 
   return (
     <div>
       <Carousel images={pictures} />
-      <h1>{title}</h1>
-      <p>{location}</p>
-      <Tags tags={tags} id={id} />
-      {renderStars(rating)}
-      <p>{host.name}</p>
-      <img src={host.picture} alt='host' />
-      <div className='collapse-container'>
-        <Collapse title="Description">
-          <p>{description}</p>
-        </Collapse>
-        <Collapse title="Equipements">
-          <ul>
-            {equipments.map((equipment, index) => (
-              <li key={index}>{equipment}</li>
+      <div className='locpage-container'>
+        <h2>{title}</h2>
+        <p>{location}</p>
+        <Tags tags={tags} id={id} />
+        <div className='rating_host-container'>
+          <div className="rating-star">
+            {[...Array(totalStars)].map((_, index) => (
+              <FontAwesomeIcon
+                key={index}
+                icon={faStar}
+                className={index < filledStars ? 'star' : 'empty-star'}
+              />
             ))}
-          </ul>
-        </Collapse>
+          </div>  
+          <div className="host">    
+            <p>{host.name}</p>
+            <img src={host.picture} alt='host' />
+          </div>
+        </div>
+        <div className='collapse-container'>
+          <Collapse title="Description">
+            <p>{description}</p>
+          </Collapse>
+          <Collapse title="Equipements">
+            <ul>
+              {equipments.map((equipment, index) => (
+                <li key={index}>{equipment}</li>
+              ))}
+            </ul>
+          </Collapse>
+        </div>
       </div>
     </div>
   );
