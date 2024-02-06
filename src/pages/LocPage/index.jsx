@@ -34,25 +34,29 @@ function LocPage() {
     <div>
       <Carousel images={pictures} />
       <div className='locpage-container'>
-        <h2>{title}</h2>
-        <p>{location}</p>
-        <Tags tags={tags} id={id} />
-        <div className='rating_host-container'>
-          <div className="rating-star">
-            {[...Array(totalStars)].map((_, index) => (
-              <FontAwesomeIcon
-                key={index}
-                icon={faStar}
-                className={index < filledStars ? 'star' : 'empty-star'}
-              />
-            ))}
-          </div>  
-          <div className="host">    
-            <p>{host.name}</p>
-            <img src={host.picture} alt='host' />
-          </div>
-        </div>
-        <div className='collapse-container'>
+        <section className='main-locpage'>
+          <section className='locpage_text'>
+            <h2>{title}</h2>
+            <p>{location}</p>
+            <Tags tags={tags} id={id} />
+          </section>
+          <section className='rating_host-container'>
+            <div className="rating-star">
+              {[...Array(totalStars)].map((_, index) => (
+                <FontAwesomeIcon
+                  key={index}
+                  icon={faStar}
+                  className={index < filledStars ? 'star' : 'empty-star'}
+                />
+              ))}
+            </div>  
+            <div className="host">    
+              <p>{host.name}</p>
+              <img src={host.picture} alt='host' />
+            </div>
+          </section>
+        </section>
+        <section className='collapse-container'>
           <Collapse title="Description">
             <p>{description}</p>
           </Collapse>
@@ -63,7 +67,7 @@ function LocPage() {
               ))}
             </ul>
           </Collapse>
-        </div>
+        </section>
       </div>
     </div>
   );
