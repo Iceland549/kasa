@@ -23,5 +23,9 @@
 }
 
 .collapse-children.open {
-    display: block; /* Si la classe est 'open', la div est affichée */
+    display: flex; /* Si la classe est 'open', la div est affichée */
+    ul {
+        flex-direction: column;
+        list-style: none;
+    }
 }
