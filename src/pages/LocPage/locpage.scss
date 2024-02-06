@@ -1,14 +1,19 @@
 @import '../../utils/styles/sass/_variables';
+@import '../../utils/styles/sass/_base';
 
-.collapse-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
+.locpage-container h2 {
+    color: $primary-color;
 }
 
-.rating {
+.rating_host-container {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 1.2em;
+
+}
+
+.rating-star {
     margin-bottom: 10px;
   
     .star {
@@ -19,4 +24,30 @@
         color: $third-color;
         filter: brightness(80%);
     }
+}
+
+.host {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.7em;
+    
+    p {
+        text-align: right;
+        color: $primary-color;
+        max-width: 5em;
+        margin: unset;
+    }
+
+    img {
+        width: 3em;
+        height: 3em;
+        border-radius: 50px;
+    }
+}
+    
+.collapse-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding-bottom: 1.5em;
 }
