@@ -11,6 +11,9 @@
     .collapse-title, .arrow-icons  {
         color: $third-color;
     }
+    .arrow-icons {
+        cursor: pointer;
+    }
 }
 
 .collapse-children {
