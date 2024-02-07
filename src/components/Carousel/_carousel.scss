@@ -16,7 +16,7 @@
     position: absolute;
     cursor: pointer;
     z-index: 1;
-    transform: translateY(350%);
+    transform: translateY(300%);
     width: 1em;
     height: 2em;
 }
@@ -31,9 +31,32 @@
 }
 
 .arrow_left {
-    left: 1em;
+    font-size: 5vw;
+    left: 6vw;
 }
 
 .arrow_right {
-    right: 1em;
+    font-size: 5vw;
+    right: 6vw;
 }
+
+@media screen and (min-width: 768px) {
+    .carousel-img {
+        height: 20em;    
+    }
+    .carousel .arrow {
+        transform: translateY(180%);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .carousel .arrow {
+        transform: translateY(110%);
+    }
+} 
+
+@media screen and (min-width: 1440px) {
+    .carousel .arrow {
+        transform: translateY(65%);
+    }
+}  
