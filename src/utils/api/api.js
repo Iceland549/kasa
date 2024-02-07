@@ -1,6 +1,5 @@
-export { getLogements };
-
 // api.js
+export { getLogements };
 
 async function getLogements() {
     const response = await fetch("http://localhost:3000/kasa.json");
