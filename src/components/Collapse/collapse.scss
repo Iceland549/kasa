@@ -23,6 +23,10 @@
     max-height: 0;
     transform: translateY(-30%);
     transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out, transform 0.5s ease-in-out;
+    ul {
+        flex-direction: column;
+        list-style: none;
+    }
 }
 
 .collapse-children.open {
