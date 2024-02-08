@@ -3,7 +3,7 @@ import './_carousel.scss'
 import arrowLeftImage from '../../assets/arrow_left.png'; 
 import arrowRightImage from '../../assets/arrow_right.png'; 
 
-const Carousel = ({ images }) => {
+function Carousel({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
