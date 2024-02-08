@@ -9,10 +9,10 @@ function Collapse({title, children}) {
   const toggleOpen = () => setIsOpen(!isOpen); 
 
   return (
-    <div className='collapse' onClick={toggleOpen}>
+    <div className='collapse' >
       <div className={`arrow-container ${isOpen ? 'up' : 'down'}`}>
         {title && <p className="collapse-title">{title}</p>}
-        <FontAwesomeIcon className='arrow-icons' icon={isOpen ? faAngleDown : faAngleUp} /> 
+        <FontAwesomeIcon className='arrow-icons' icon={isOpen ? faAngleDown : faAngleUp}onClick={toggleOpen} /> 
       </div>
       <div className={`collapse-children ${isOpen ? 'open' : ''}`}>
         {children}
