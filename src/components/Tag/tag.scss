@@ -1,0 +1,16 @@
+@import '../../utils/styles/sass/_variables';
+
+
+
+.tag {
+    display: inline-block;
+    color: $third-color;
+    align-items: center;
+    padding: 0.2em 2em;
+    background-color: $primary-color;
+    list-style: none;
+    border-radius: 5px;
+    font-size: 0.7em;
+
+}
+
