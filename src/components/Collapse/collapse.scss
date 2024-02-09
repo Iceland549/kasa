@@ -13,8 +13,17 @@
     }
     .arrow-icons {
         cursor: pointer;
+        transition: transform 0.5s, opacity 0.5s;
+    }
+
+    &.up .arrow-icons  {
+        transform: rotate(180deg);
     }
 }
+.arrow-container.down .faAngleDown-icon {
+    opacity: 1;
+}
+
 
 .collapse-children {
     border-radius: 0.3em;
@@ -24,8 +33,8 @@
     filter: brightness(90%);
     opacity: 0;
     max-height: 0;
-    transform: translateY(-30%);
-    transition: 0.5s ease-in-out, 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: top;    transition: 0.5s ease-in-out, 0.5s ease-in-out, transform 0.5s ease-in-out;
     overflow: hidden;
     ul {
         flex-direction: column;
@@ -35,8 +44,7 @@
 
 .collapse-children.open {
     opacity: 1;
-    transform: translateY(0);
-
+    transform: scaleY(1);
     max-height: 500px;  
     ul {
         flex-direction: column;
@@ -45,11 +53,13 @@
 }
 .collapse-children p {
     opacity: 0;
-    transform: translateY(0);
-    transition: 0.5s ease-in-out 0.5s, 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: top;    transition: 0.5s ease-in-out 0.5s, 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .collapse-children.open p {
     opacity: 1;
+    transform: scaleY(1);
+
 }
 
