@@ -1,25 +1,32 @@
 import React, { useEffect, useState } from 'react';
 import { getLogements } from '../../utils/api/api';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import Collapse from '../../components/Collapse';
-import Tags from '../../components/Tags';
+import Tag from '../../components/Tag';
 import Carousel from '../../components/Carousel'; 
 import './locpage.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 function LocPage() {
-  const [logement, setLogement] = useState(null);
+  const [logement, setLogement] = useState();
   const { id } = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchLogement = async () => {
       const logements = await getLogements();
-      const logement = logements.find(logement => logement.id === id);
-      setLogement(logement);
+      const logementFound = logements.find(logement => logement.id === id);
+
+      if (logementFound) {
+        setLogement(logementFound);
+      } else {
+        navigate('/logement-non-trouve');
+      }
+
     };
     fetchLogement();
-  }, [id]); 
+  }, [id, navigate]); 
 
   if (!logement) {
     return <div>Loading...</div>
@@ -38,7 +45,11 @@ function LocPage() {
           <section className='locpage_text'>
             <h2>{title}</h2>
             <p>{location}</p>
-            <Tags tags={tags} id={id} />
+            <div className='tags'>
+              {
+                tags.map(tag =><Tag tagName={tag} key={tag}/>)
+              }
+            </div>
           </section>
           <section className='rating_host-container'>
             <div className="rating-star">
