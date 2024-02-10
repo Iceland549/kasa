@@ -15,13 +15,10 @@
         cursor: pointer;
         transition: transform 0.5s, opacity 0.5s;
     }
-
-    &.up .arrow-icons  {
-        transform: rotate(180deg);
+    &.up .arrow-icons {
+        transform: rotate(-180deg);
     }
-}
-.arrow-container.down .faAngleDown-icon {
-    opacity: 1;
+
 }
 
 
