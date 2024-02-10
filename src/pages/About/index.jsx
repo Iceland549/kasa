@@ -14,7 +14,7 @@ function About() {
 
   return (
     <div>
-      <Banner image={banner2} />
+      <Banner image={banner2} alt="paysage de forêt" />
       <div className='about-container'>
         <Collapse title="Fiabilité">
           <p>{text1}</p>
