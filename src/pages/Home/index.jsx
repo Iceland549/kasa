@@ -19,7 +19,7 @@ function Home() {
 
   return (
     <div>
-        <Banner className='banner-container' image={banner1}>
+        <Banner className='banner-container' image={banner1} alt="Paysage côtier rocheux">
           <h1 className="banner-text">Chez vous, <br/> partout et ailleurs</h1>
         </Banner>        
         <div className="card-container">
