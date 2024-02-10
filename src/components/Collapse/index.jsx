@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import './collapse.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleUp, faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
 
 function Collapse({title, children}) {
   const [isOpen, setIsOpen] = useState(false); 
@@ -12,7 +12,7 @@ function Collapse({title, children}) {
     <div className='collapse' >
       <div className={`arrow-container ${isOpen ? 'up' : 'down'}`}>
         {title && <p className="collapse-title">{title}</p>}
-        <FontAwesomeIcon className='arrow-icons' icon={isOpen ? faAngleDown : faAngleUp}onClick={toggleOpen} /> 
+        <FontAwesomeIcon className='arrow-icons' icon={faAngleUp} onClick={toggleOpen} />       
       </div>
       <div className={`collapse-children ${isOpen ? 'open' : ''}`}>
         {children}
