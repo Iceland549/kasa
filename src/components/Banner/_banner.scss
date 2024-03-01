@@ -2,15 +2,14 @@
 
 .banner {
   position: relative;
-  height: 8em;
+  height: 16vw;
   width: 100%;
   
   .banner_img1 {
-    height: 6em;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
-    object-position: center bottom;
     filter: brightness(60%);
 
     }
