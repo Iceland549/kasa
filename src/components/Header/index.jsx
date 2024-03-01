@@ -13,7 +13,7 @@ function Header() {
         <nav>
           <ul>
           <li className='header-accueil'><NavLink to="/" activeStyle={{ borderBottom: '2px solid red' }}>Accueil</NavLink></li>
-          <li className='header-apropos'><NavLink to="/About" activeStyle={{ borderBottom: '2px solid red' }}>A propos</NavLink></li>
+          <li className='header-apropos'><NavLink to="/About" activeStyle={{ borderBottom: '2px solid red' }}>A Propos</NavLink></li>
           </ul>
         </nav>
       </div>
