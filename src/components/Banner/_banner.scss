@@ -1,8 +1,13 @@
 @import '../../utils/styles/sass/_variables';
 
+.container {
+  width: 90vw; 
+  margin: 0 auto; 
+}
+
 .banner {
   position: relative;
-  height: 16vw;
+  height: 17vw;
   width: 100%;
   
   .banner_img1 {
@@ -10,7 +15,7 @@
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
-    filter: brightness(60%);
+    filter: brightness(70%);
 
     }
   
