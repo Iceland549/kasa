@@ -5,12 +5,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 4em;
-    padding: 1em;
+    width: 90vw; 
+    margin: 0 auto; 
+    height: 4vw;
+    padding: 1vw;
   
     .header_logo {
-        width: 9em;
-        height: 3em;
+        width: 9vw;
+        height: 3vw;
     }
   
     nav {
@@ -26,7 +28,7 @@
             justify-content: space-between;
             text-decoration: none;
             color: $primary-color;
-            font-size: 1em;
+            font-size: 1vw;
           }
           a.active {
             border-bottom: 1px solid $primary-color; 
@@ -37,5 +39,5 @@
   }
 
 .header-accueil {
-  margin-right: 1em;
+  margin-right: 1vw;
 }
