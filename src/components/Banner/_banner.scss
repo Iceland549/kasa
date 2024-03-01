@@ -15,12 +15,28 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 15px;
     filter: brightness(70%);
 
     }
-  
+  .banner-text {
+    position: absolute;
+    top: 1vh; 
+    left: 3vw;
+    color: $third-color;
+    font-size: 3vw;
+  }
 
     
 }
   
+@media screen and (min-width: 768px) {
+  .banner-text {
+      top: 1vh;
+      padding-left: 4em;
+  }
+
+  .banner-text br {
+      display: none;
+  }
+}
