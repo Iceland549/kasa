@@ -1,15 +1,21 @@
+body {
+  margin: unset;
+}
+
 .banner {
   position: relative;
   height: 203px;
   width: 1240px;
   padding: 50px 100px;
 }
+
 .banner .banner_img1 {
   height: 203px;
   width: 1240px;
   object-fit: cover;
   border-radius: 25px;
 }
+
 .banner .banner_text {
   position: absolute;
   top: 40%;
@@ -31,6 +37,7 @@
   margin: 50px;
   padding: 100px 50px;
 }
+
 .card_container .card_loc {
   width: 340px;
   height: 340px;
@@ -47,10 +54,12 @@ footer {
   justify-content: center;
   gap: 20px;
 }
+
 footer .footer_logo {
   width: 100px;
   height: 46px;
 }
+
 footer p {
   text-align: center;
   font-size: 14px;
@@ -67,18 +76,22 @@ header {
   padding: 45px 100px 0;
   margin: auto;
 }
+
 header .hearder_logo {
   width: 210px;
   height: 68px;
 }
+
 header nav ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
 }
+
 header nav ul li {
   margin-left: 57px;
 }
+
 header nav ul li a {
   text-decoration: none;
   color: #FF6060;
