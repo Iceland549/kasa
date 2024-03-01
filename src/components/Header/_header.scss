@@ -7,12 +7,11 @@
     align-items: center;
     width: 90vw; 
     margin: 0 auto; 
-    height: 4vw;
-    padding: 2vw 0;
+    padding: 8vw 0;
   
     .header_logo {
-        width: 11vw;
-        height: 4vw;
+        width: 30vw;
+        height: 11vw;
     }
   
     nav {
@@ -28,7 +27,7 @@
             justify-content: space-between;
             text-decoration: none;
             color: $primary-color;
-            font-size: 1.5vw;
+            font-size: 4.5vw;
           }
           a.active {
             border-bottom: 1px solid $primary-color; 
@@ -40,4 +39,27 @@
 
 .header-accueil {
   margin-right: 3vw;
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    padding: 3vw 0;
+  
+    .header_logo {
+        width: 11vw;
+        height: 4vw;
+    }
+  
+    nav {
+      ul {
+  
+        li {
+          
+          a {
+            font-size: 1.5vw;
+          }
+        }
+      }
+    }
+  }
 }
