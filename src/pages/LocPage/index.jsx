@@ -38,7 +38,7 @@ function LocPage() {
   const filledStars = Math.min(rating, totalStars); 
 
   return (
-    <div>
+    <div className='locpage'>
       <Carousel images={pictures} />
       <div className='locpage-container'>
         <section className='main-locpage'>
