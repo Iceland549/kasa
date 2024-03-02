@@ -5,9 +5,9 @@ import './_header.scss'
 import '../../utils/styles/sass/_base.scss';
 
 
-function Header({ isLocPage }) {
+function Header() {
   return (
-    <header className={isLocPage ? 'locpage-header' : ''}>
+    <header>
       <div className='header-container'>
         <img src={logo} className="header_logo" alt="Logo" />
         <nav>
