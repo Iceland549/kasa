@@ -1,6 +1,16 @@
 @import '../../utils/styles/sass/_variables';
 @import '../../utils/styles/sass/_base';
 
+.locpage-header nav ul li a {
+    text-transform: uppercase; 
+    font-size: 4vw;
+}
+
+.locpage {
+    width: 90vw;
+    margin: 0 auto;
+}
+
 .locpage-container h2, p {
     color: $primary-color;
 }
@@ -60,6 +70,11 @@
 }
 
 @media screen and (min-width: 768px) {
+
+    .locpage-header nav ul li a {
+        text-transform: none; 
+        font-size: 1.5vw;
+    }
 
     .main-locpage {
         display: flex;
