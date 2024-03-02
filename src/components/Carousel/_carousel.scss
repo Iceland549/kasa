@@ -22,12 +22,7 @@
 }
 
 .image-count {
-    position: absolute;
-    bottom: 0.5em;
-    left: 50%;
-    transform: translate(-50%);
-    color: $third-color;
-    text-shadow: 0 0 1em $secondary-color;
+    display: none;
 }
 
 .arrow_left {
@@ -41,22 +36,28 @@
 }
 
 @media screen and (min-width: 768px) {
+    .image-count {
+        display: flex;
+        position: absolute;
+        bottom: 0.5em;
+        left: 50%;
+        transform: translate(-50%);
+        color: $third-color;
+        text-shadow: 0 0 1em $secondary-color;
+    }
+
     .carousel-img {
-        height: 20em;    
+        height: 34vw;    
     }
     .carousel .arrow {
-        transform: translateY(180%);
+        transform: translateY(14vw);
+    }
+    .arrow_left {
+        left: 2vw;
+    }
+    
+    .arrow_right {
+        right: 2vw;
     }
 }
 
-@media screen and (min-width: 1024px) {
-    .carousel .arrow {
-        transform: translateY(110%);
-    }
-} 
-
-@media screen and (min-width: 1440px) {
-    .carousel .arrow {
-        transform: translateY(65%);
-    }
-}  
