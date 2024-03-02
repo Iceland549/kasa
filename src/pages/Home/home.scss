@@ -15,10 +15,25 @@
   
 
 @media screen and (min-width: 768px) {
+    .home-card{
+        width: 90vw;
+        margin: 0 auto;
+        border-width: 2px;
+        border-style: solid;
+        border-color: $fourth-color;
+        padding-top: 4vw;
+        border-radius: 15px;
+        background-color: $fourth-color;
+        margin-bottom: 4vw;
+    }
+
     .card-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1em;
+        border-radius: 15px;
+        width: 80vw;
+
     }
 }
 
