@@ -8,7 +8,7 @@ import '../../pages/LocPage/locpage.scss';
 function Layout({ children }) {
   return (
     <div>
-      <Header isLocPage={true} />
+      <Header />
       <main>{children}</main>
       <Footer />
     </div>
