@@ -1,6 +1,8 @@
 @import '../../utils/styles/sass/_variables';
 
 .arrow-container {
+    z-index: 999;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,7 +44,9 @@
 .collapse-children.open {
     opacity: 1;
     transform: scaleY(1);
-    max-height: 500px;  
+    max-height: 500px;
+    margin-top: -10px; 
+    margin-bottom: 3vw; 
     ul {
         flex-direction: column;
         list-style: none;
