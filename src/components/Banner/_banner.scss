@@ -34,17 +34,19 @@
 @media screen and (min-width: 768px) {
   .banner {
     height: 17vw;
-  }
-  .banner-text {
-      top: 0;
-      left: 0;
+
+    .banner_img1 {
+      border-radius: 15px;
+    }
+    .banner-text {
+      top: 4vw;
+      left: 18vw;
       font-size: 4vw;
+    }
   }
 
   .banner-text br {
       display: none;
   }
-  .banner_img1 {
-    border-radius: 15px;
-  }
+
 }
