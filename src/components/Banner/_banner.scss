@@ -8,35 +8,43 @@
 
 .banner {
   position: relative;
-  height: 17vw;
+  height: 28vw;
   width: 100%;
   
   .banner_img1 {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 10px;
     filter: brightness(70%);
 
     }
   .banner-text {
     position: absolute;
-    top: 1vh; 
-    left: 3vw;
+    top: 2vw; 
+    left: 5vw;
     color: $third-color;
-    font-size: 3vw;
+    font-size: 7vw;
+    font-weight: normal;
   }
 
     
 }
   
 @media screen and (min-width: 768px) {
+  .banner {
+    height: 17vw;
+  }
   .banner-text {
-      top: 1vh;
-      padding-left: 4em;
+      top: 0;
+      left: 0;
+      font-size: 4vw;
   }
 
   .banner-text br {
       display: none;
+  }
+  .banner_img1 {
+    border-radius: 15px;
   }
 }
