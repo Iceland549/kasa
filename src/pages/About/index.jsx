@@ -16,18 +16,20 @@ function About() {
     <div>
       <Banner image={banner2} alt="paysage de forêt" />
       <div className='about-container'>
-        <Collapse title="Fiabilité">
-          <p>{text1}</p>
-        </Collapse>
-        <Collapse title="Respect">
-          <p>{text2}</p>
-        </Collapse>
-        <Collapse title="Service">
-          <p>{text3}</p>
-        </Collapse>
-        <Collapse title="Sécurité">
-          <p>{text4}</p>
-        </Collapse>
+        <div className='collapse'>
+          <Collapse title="Fiabilité">
+            <p>{text1}</p>
+          </Collapse>
+          <Collapse title="Respect">
+            <p>{text2}</p>
+          </Collapse>
+          <Collapse title="Service">
+            <p>{text3}</p>
+          </Collapse>
+          <Collapse title="Sécurité">
+            <p>{text4}</p>
+          </Collapse>
+        </div>
       </div>
     </div>
   );
