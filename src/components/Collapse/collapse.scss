@@ -5,8 +5,8 @@
     justify-content: space-between;
     align-items: center;
     background-color: $primary-color;
-    padding: 0 1vw;
-    border-radius: 10px;
+    padding: 0 3vw;
+    border-radius: 5px;
 
     .collapse-title, .arrow-icons  {
         color: $third-color;
@@ -60,3 +60,9 @@
 
 }
 
+@media screen and (min-width: 768px) {
+    .arrow-container {
+        padding: 0 1vw;
+        border-radius: 5px;
+    }
+}
