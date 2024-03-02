@@ -21,11 +21,13 @@ function Home() {
     <div>
         <Banner className='banner-container' image={banner1} alt="Paysage côtier rocheux">
           <h1 className="banner-text">Chez vous, <br/> partout et ailleurs</h1>
-        </Banner>        
-        <div className="card-container">
-          {logements.map(logement => (
-            <Card className="card" key={logement.id} id={logement.id} title={logement.title} cover={logement.cover} />
-          ))}
+        </Banner>  
+        <div className='home-card'>      
+          <div className="card-container">
+            {logements.map(logement => (
+              <Card className="card" key={logement.id} id={logement.id} title={logement.title} cover={logement.cover} />
+            ))}
+          </div>
         </div>
     </div>
   );
