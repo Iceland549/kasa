@@ -12,8 +12,8 @@ function Header() {
         <img src={logo} className="header_logo" alt="Logo" />
         <nav>
           <ul>
-          <li className='header-accueil'><NavLink to="/" activeStyle={{ borderBottom: '2px solid red' }}>Accueil</NavLink></li>
-          <li className='header-apropos'><NavLink to="/About" activeStyle={{ borderBottom: '2px solid red' }}>A Propos</NavLink></li>
+          <li className='header-accueil'><NavLink to="/" activestyle={{ borderBottom: '2px solid red' }}>Accueil</NavLink></li>
+          <li className='header-apropos'><NavLink to="/About" activestyle={{ borderBottom: '2px solid red' }}>A Propos</NavLink></li>
           </ul>
         </nav>
       </div>
